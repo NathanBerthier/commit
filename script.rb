@@ -33,9 +33,10 @@ dieu = ['Quand je demande une question, tu sais à qui je demande ? Moi.',
         'Je suis AWARE!!!'
         ]
 
-puts (1..8).rand
-File.delete('file.txt')
-File.write('file.txt', dieu.sample)
-exec('git add .')
-exec("git commit -m 'Today JCVD says...'")
-exec('git push origin master')
+rand(1..8).times do
+  File.delete('file.txt')
+  File.write('file.txt', dieu.sample)
+  exec('git add .')
+  exec("git commit -m 'Today JCVD says...'")
+  exec('git push origin master')
+end
