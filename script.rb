@@ -33,5 +33,6 @@ dieu = ['Quand je demande une question, tu sais à qui je demande ? Moi.',
         'Je suis AWARE!!!'
         ]
 
-File.delete('file.txt')
-File.write('file.txt', dieu.sample)
+# File.delete('file.txt')
+# File.write('file.txt', dieu.sample)
+exec('git add .')
