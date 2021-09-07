@@ -36,4 +36,5 @@ dieu = ['Quand je demande une question, tu sais à qui je demande ? Moi.',
 File.delete('file.txt')
 File.write('file.txt', dieu.sample)
 system('git add .')
-puts system("git commit -m 'Today JCVD says...'")
+system("git commit -m 'Today JCVD says...'")
+puts system('git push origin master')
