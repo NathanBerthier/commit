@@ -39,4 +39,6 @@ rand(1..8).times do
   exec('git add .')
   exec("git commit -m 'Today JCVD says...'")
   exec('git push origin master')
+  sleep 300
+  puts 'Send to Github'
 end
